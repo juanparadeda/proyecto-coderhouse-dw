@@ -1,0 +1,344 @@
+@charset "UTF-8";
+/*En este archivo scss pongo los estilos generales de textos y media querys que afectan a todas las secciones */
+/* Lista de colores */
+/* Color de fondo de cajas de texto */
+/* Mixins de cambio de color de hover */
+/* Extends */
+.form-flex .form-container .custom-button, .form-flex .form-container div div .big-field, .form-flex .form-container div div .small-field {
+  background-color: #035451;
+  border: 1px solid #16FAB2;
+  border-radius: 0.3em;
+  color: #16FAB2;
+}
+.form-flex .form-container .custom-button:focus, .form-flex .form-container div div .big-field:focus, .form-flex .form-container div div .small-field:focus {
+  background-color: #07331F;
+  border: 1px solid #16FAB2;
+  caret-color: #16FAB2;
+  color: #16FAB2;
+}
+
+h2, h1 {
+  color: #09E3DC;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: normal;
+}
+
+.notfound:hover, .portfolio-container .portfolio-item .portfolio-photo, .section-container, .carousel-custom, header nav ul li:hover {
+  box-shadow: 0px 0px 3.75em 0.6em rgba(10, 252, 38, 0.2);
+}
+
+.section-container {
+  background: linear-gradient(320deg, #07331F 30%, black 100%);
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  background-color: black;
+  z-index: 1;
+  border-bottom: 1px solid #0AFC26;
+  opacity: 0.87;
+}
+header .logo {
+  width: 7.5em;
+  margin: 0.5em 0 0.5em 1em;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5em 0 0;
+  padding: 0px;
+  opacity: 0.87;
+}
+header nav ul li {
+  justify-content: flex-end;
+  padding: 0.4em 0;
+  background-color: #07331F;
+  border-radius: 1.25em;
+  margin: 0.4em;
+  border: 1px solid #16FAB2;
+  transition: all 0.5s;
+}
+header nav ul li a {
+  padding: 1em 0.6em;
+}
+header nav ul li:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+}
+header nav ul li:hover a {
+  color: #7afcd3;
+}
+
+/* Estilos de footer */
+footer {
+  border-top: 1px solid #0AFC26;
+  display: block;
+  margin-top: auto;
+}
+footer nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0px;
+}
+footer nav ul li {
+  display: inline-block;
+  padding: 0.25em;
+  margin: 1em;
+  transition: all 1s;
+}
+footer nav ul li:hover {
+  position: relative;
+  bottom: 0.1em;
+  animation: shake 0.25s infinite;
+}
+footer nav ul li:hover a {
+  color: #7afcd3;
+}
+
+@keyframes shake {
+  /* Animación para que se sacudan un poquito los íconos */
+  0% {
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+  }
+}
+/* Estilos de contenido main del inicio y la sección Workshops*/
+/*Tamaño del carousel de Bootstrap*/
+.carousel-custom {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/*Secciones de contenido de imagen y texto*/
+.section-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 50px auto;
+}
+.section-container .section-item-image {
+  padding: 1.25em;
+}
+.section-container .section-item-image .text-photo {
+  width: 31.25em;
+  height: auto;
+}
+.section-container .section-item-text {
+  padding: 1.25em;
+  width: 47em;
+}
+.section-container .workshop-photo {
+  width: 35em;
+  height: auto;
+}
+
+/* Estilos del contenido main de la sección de shows */
+.portfolio-container {
+  /* Este es el grid container de las fotos de las secciones Shows y Books */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(auto, auto);
+  width: 90%;
+  grid-gap: 2.5em;
+  margin: 3em auto;
+}
+.portfolio-container .portfolio-item .portfolio-photo {
+  width: 100%;
+  height: 100%;
+}
+.portfolio-container .portfolio-item:hover {
+  cursor: pointer;
+}
+
+.portfolio-item:nth-child(1) {
+  /*Selector de 1ra foto */
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.portfolio-item:nth-child(4) {
+  /*Selector de 4ta foto */
+  grid-column: 2/4;
+  grid-row: 3/5;
+}
+
+.portfolio-item:nth-child(7) {
+  /*Selector de 7ma foto */
+  grid-column: 1/4;
+  grid-row: 5/8;
+}
+
+@media only screen and (max-width: 1080px) {
+  /* Ajuste de grid */
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-item:nth-child(n) {
+    grid-column: unset;
+    grid-row: unset;
+  }
+}
+.form-flex {
+  margin-top: 2em;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.form-flex .form-container {
+  width: 35em;
+}
+.form-flex .form-container div .field-text {
+  /* Texto del formulario contacto. Cambié el h3 por este nombre de clase para que no se me pise con el popover que usa h3 */
+  color: #16FAB2;
+}
+.form-flex .form-container div div .big-field {
+  height: 15em;
+}
+.form-flex .form-container .custom-button {
+  height: 2.7em;
+  float: right;
+}
+.form-flex .rrss {
+  /* Sección del formulario con links directos a RRSS */
+  margin: 2.5em;
+  text-align: left;
+}
+.form-flex .rrss .link-form {
+  /* Logos con links directos a RRSS */
+  margin: 1em;
+  display: block;
+  width: auto;
+  color: #09E3DC;
+  transition: all 0.5s;
+}
+.form-flex .rrss .link-form:hover {
+  color: #5af8f3;
+}
+.form-flex .rrss .link-form:hover .text-form {
+  color: #5af8f3;
+}
+.form-flex .rrss .link-form .text-form {
+  /* URLs directas a RRSS */
+  margin-left: 0.5em;
+  font-size: 1.5em;
+  display: inline;
+  transition: all 0.5s;
+}
+
+.notfound {
+  display: inline-block;
+  padding: 0.4em 0.4em;
+  background-color: #07331F;
+  border-radius: 1.25em;
+  margin: 0.4em auto;
+  border: 1px solid #16FAB2;
+  transition: all 0.5s;
+}
+.notfound:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  color: #7afcd3;
+}
+
+main {
+  overflow: hidden;
+  margin: 0 2em;
+}
+
+/*En el body defino el color del fondo y la fuente, porque por el momento es lo que voy a usar en todo el website*/
+body {
+  margin: 0px;
+  min-height: 100vh;
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estio de links en general*/
+a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #16FAB2;
+}
+
+/* estilos comunes a todos los titulos y párrafos */
+h1 {
+  /*Título principal de cada sección*/
+  margin-top: 2em;
+  font-size: 4.5em;
+}
+
+h2 {
+  /*Subtítulos*/
+  font-size: 3em;
+  margin-top: 2em;
+}
+
+p {
+  /*Párrafos de texto*/
+  font-size: 1.4em;
+  color: #16FAB2;
+  line-height: 2em;
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1080px) {
+  body {
+    font-size: 12px;
+    /* Así achico todos los valores que tengo en em */
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+  body {
+    font-size: 10px;
+    /* Así achico todos los valores que tengo en em */
+  }
+}
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 8px;
+    /* Así achico todos los valores que tengo en em */
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

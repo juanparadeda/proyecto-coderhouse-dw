@@ -1,0 +1,38 @@
+/* Estilos de contenido main del inicio y la sección Workshops*/
+
+
+/*Tamaño del carousel de Bootstrap*/
+.carousel-custom {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    @extend %box-shadow;
+}
+/*Secciones de contenido de imagen y texto*/
+.section-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 50px auto;
+    @extend %gradient;
+    @extend %box-shadow;   
+    .section-item-image {
+        padding: 1.25em;
+        .text-photo { 
+            width: 31.25em;
+            height: auto;
+        }
+    }
+    .section-item-text {
+        padding: 1.25em;
+        width: 47em;
+    }
+    .workshop-photo {
+        width: 35em;
+        height: auto;
+    }
+    
+}
+

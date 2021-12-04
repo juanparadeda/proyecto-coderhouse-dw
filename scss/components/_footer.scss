@@ -1,0 +1,42 @@
+/* Estilos de footer */
+
+footer{
+    border-top: 1px solid nth($colors, 4);
+    display: block;
+    margin-top: auto;
+    nav{
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0px;
+            li{
+                display: inline-block;
+                padding: 0.25em;
+                margin: 1em;
+                transition: all 1s;
+                &:hover{
+                    position: relative;
+                    bottom: 0.1em;
+                    animation: shake 0.25s infinite; 
+                    a {
+                        @include color-hover(nth($colors, 2));
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes shake { /* Animación para que se sacudan un poquito los íconos */
+    0% {
+        @include prefixes(rotate(20deg));
+    }
+    50% {
+        @include prefixes(rotate(-20deg));
+    }
+    100% {
+        @include prefixes(rotate(20deg));
+    }
+}

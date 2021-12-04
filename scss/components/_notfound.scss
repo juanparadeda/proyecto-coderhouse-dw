@@ -1,0 +1,14 @@
+.notfound {
+    display: inline-block;
+    padding:  0.4em 0.4em;
+    background-color: nth($colors, 5);
+    border-radius: 1.25em;
+    margin: 0.4em auto;
+    border: 1px solid nth($colors, 2);  
+    transition: all 0.5s;
+    &:hover {
+        @extend %box-shadow;
+        @include prefixes(scale(1.05));
+        @include color-hover(nth($colors, 2));
+    }
+}

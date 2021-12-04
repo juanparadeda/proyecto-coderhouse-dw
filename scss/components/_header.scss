@@ -1,0 +1,46 @@
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    background-color: nth($colors, 1);
+    z-index: 1;
+    border-bottom: 1px solid nth($colors, 4);
+    opacity: 0.87;
+    .logo {
+        width: 7.5em;
+        margin: 0.5em 0 0.5em 1em;
+    }
+    nav {
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 5em 0 0;
+            padding: 0px;
+            opacity: 0.87;
+            li {
+                justify-content: flex-end;
+                padding:  0.4em 0;
+                background-color: nth($colors, 5);
+                border-radius: 1.25em;
+                margin: 0.4em;
+                border: 1px solid nth($colors, 2);  
+                transition: all 0.5s;
+                a {
+                    padding: 1em 0.6em;
+                }
+                &:hover {
+                    @extend %box-shadow;
+                    @include prefixes(scale(1.05));
+                    a {
+                        @include color-hover(nth($colors, 2));
+                    }
+                } 
+            }
+        }
+    }
+}

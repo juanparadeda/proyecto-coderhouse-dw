@@ -1,0 +1,70 @@
+/*En este archivo scss pongo los estilos generales de textos y media querys que afectan a todas las secciones */
+
+
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/extends';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/indexWorkshops';
+@import 'components/booksShows';
+@import 'components/contacto';
+@import 'components/notfound';
+
+main {
+    overflow: hidden;
+    margin: 0 2em;
+}
+/*En el body defino el color del fondo y la fuente, porque por el momento es lo que voy a usar en todo el website*/
+body { 
+    margin: 0px;
+    min-height: 100vh;
+    background-color: nth($colors, 1);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+/* Estio de links en general*/
+a { 
+    text-decoration: none;
+    font-size: 1.2em;
+    color: nth($colors, 2);
+}
+/* estilos comunes a todos los titulos y párrafos */
+
+h1 { /*Título principal de cada sección*/
+    margin-top: 2em;
+    font-size: 4.5em;
+    @extend %title-format;
+}
+
+h2 { /*Subtítulos*/
+    font-size: 3em;
+    margin-top: 2em;
+    @extend %title-format; 
+}
+
+p { /*Párrafos de texto*/
+    font-size: 1.4em;
+    color: nth($colors, 2);
+    line-height: 2em;
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1080px){
+    body {
+        font-size: 12px; /* Así achico todos los valores que tengo en em */
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 800px){
+    body {
+        font-size: 10px; /* Así achico todos los valores que tengo en em */
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 8px; /* Así achico todos los valores que tengo en em */
+    }
+
+}

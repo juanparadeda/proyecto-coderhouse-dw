@@ -11,7 +11,7 @@
   color: #16FAB2;
 }
 .form-flex .form-container .custom-button:focus, .form-flex .form-container div div .big-field:focus, .form-flex .form-container div div .small-field:focus {
-  background-color: #07331F;
+  background-color: #042215;
   border: 1px solid #16FAB2;
   caret-color: #16FAB2;
   color: #16FAB2;
@@ -24,12 +24,12 @@ h2, h1 {
   font-weight: normal;
 }
 
-.notfound:hover, .portfolio-container .portfolio-item .portfolio-photo, .section-container, .carousel-custom {
+.notfound:hover, .portfolio-container .portfolio-item .portfolio-photo, .section-container, .carousel-custom, header .navbar div div .navbar-nav .nav-item:hover {
   box-shadow: 0px 0px 3.75em 0.6em rgba(10, 252, 38, 0.2);
 }
 
 .section-container {
-  background: linear-gradient(320deg, #07331F 30%, black 100%);
+  background: linear-gradient(320deg, #042215 30%, black 100%);
 }
 
 /* header {
@@ -78,6 +78,69 @@ h2, h1 {
         }
     }
 }*/
+header .navbar {
+  background-color: black;
+  border-bottom: 1px solid #0AFC26;
+  padding: 0;
+}
+header .navbar div a img {
+  width: 6em;
+  margin-left: 1em;
+}
+header .navbar div button img {
+  width: 2em;
+  border: 1px solid #16FAB2;
+  border-radius: 0.3em;
+  transition: all 0.3s;
+}
+header .navbar div button img:hover {
+  animation: hamburger-rotation 1s;
+}
+header .navbar div div .navbar-nav {
+  margin-right: 5em;
+  align-items: flex-end;
+}
+header .navbar div div .navbar-nav .nav-item {
+  background-color: #042215;
+  border-radius: 1.25em;
+  margin: 0.4em;
+  border: 1px solid #16FAB2;
+  transition: all 0.5s;
+  display: inline-block;
+  width: 7.5em;
+}
+header .navbar div div .navbar-nav .nav-item:hover {
+  color: #7afcd3;
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+}
+header .navbar div div .navbar-nav .nav-item .nav-link {
+  text-align: center;
+  color: #16FAB2;
+}
+header .navbar div div .navbar-nav .custom-active {
+  background-color: #073923;
+}
+
+@keyframes hamburger-rotation {
+  50% {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+  }
+}
 /* Estilos de footer */
 footer {
   border-top: 1px solid #0AFC26;
@@ -263,7 +326,7 @@ footer nav ul li:hover a {
 .notfound {
   display: inline-block;
   padding: 0.4em 0.4em;
-  background-color: #07331F;
+  background-color: #042215;
   border-radius: 1.25em;
   margin: 0.4em auto;
   border: 1px solid #16FAB2;

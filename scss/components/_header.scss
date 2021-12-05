@@ -44,3 +44,68 @@
         }
     }
 }*/ 
+
+header {
+    .navbar {
+        background-color: nth($colors, 1);
+        border-bottom: 1px solid nth($colors, 4);
+        padding: 0;
+        div {
+            a {
+                img {
+                    width: 6em;
+                    margin-left: 1em;
+                }
+            }
+            button {               
+                img {
+                    width: 2em;
+                    border: 1px solid nth($colors, 2);
+                    border-radius: 0.3em;
+                    transition: all 0.3s;
+                    &:hover {
+                        animation: hamburger-rotation 1s;
+                    }
+                }
+
+            }
+            div {
+                .navbar-nav {
+                    margin-right: 5em;
+                    align-items: flex-end;
+                    .nav-item {
+                        background-color: nth($colors, 5);
+                        border-radius: 1.25em;
+                        margin: 0.4em;
+                        border: 1px solid nth($colors, 2);
+                        transition: all 0.5s;
+                        display: inline-block;
+                        width: 7.5em;
+                        
+                        &:hover {
+                            @include color-hover(nth($colors, 2));
+                            @include prefixes(scale(1.05));
+                            @extend %box-shadow;
+                        }                  
+                        .nav-link {
+                            text-align: center;    
+                            color: nth($colors, 2);                
+                        }
+                    }
+                    .custom-active {
+                        background-color: lighten(nth($colors, 5), 5%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes hamburger-rotation {
+    50% {
+        @include prefixes(rotate(90deg));
+    }
+    100% {
+        @include prefixes(rotate(0deg));
+    }
+}

@@ -1,8 +1,17 @@
 <h1 align="center">Hi 👋, I'm Juan Paradeda</h1>
-<h3 align="center">A former Network Engineer, now developing myself into Frontend Web development</h3>
+<h3 align="center">A former Network Engineer, now trainee Frontend Web Developer</h3>
+
+- 🌱 I’m currently learning **HTML, CSS, SASS**
+
+- 👨‍💻 All of my projects are available at [www.github.com/juanparadeda](www.github.com/juanparadeda)
+
+- 📫 How to reach me **juanparadeda@gmail.com**
+
+- ⚡ Fun fact **I am also an amateur photographer. Checkout my Instagram!**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
+<a href="https://linkedin.com/in/juanparadeda" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="juanparadeda" height="30" width="40" /></a>
 <a href="https://instagram.com/sheipeg" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="sheipeg" height="30" width="40" /></a>
 </p>
 

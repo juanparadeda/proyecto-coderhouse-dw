@@ -275,18 +275,24 @@ footer nav ul li:hover a {
     grid-row: unset;
   }
 }
+/* Estilos de página contacto.html */
+/* La clase .form-flex es la contenedora del formulario propiamente dicho y de los links a RRSS */
 .form-flex {
   margin-top: 2em;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  /* La clase .form-container es la contenedora del formulario propiamente dicho*/
+  /* .rrss es la sección con los links a las RRSS */
 }
 .form-flex .form-container {
   width: 35em;
 }
+.form-flex .form-container div {
+  /* .field-text es el label de texto que está al lado de cada campo del formulario */
+}
 .form-flex .form-container div .field-text {
-  /* Texto del formulario contacto. Cambié el h3 por este nombre de clase para que no se me pise con el popover que usa h3 */
   color: #16FAB2;
 }
 .form-flex .form-container div div .big-field {
@@ -297,12 +303,10 @@ footer nav ul li:hover a {
   float: right;
 }
 .form-flex .rrss {
-  /* Sección del formulario con links directos a RRSS */
   margin: 2.5em;
   text-align: left;
 }
 .form-flex .rrss .link-form {
-  /* Logos con links directos a RRSS */
   margin: 1em;
   display: block;
   width: auto;
@@ -316,7 +320,6 @@ footer nav ul li:hover a {
   color: #5af8f3;
 }
 .form-flex .rrss .link-form .text-form {
-  /* URLs directas a RRSS */
   margin-left: 0.5em;
   font-size: 1.5em;
   display: inline;

@@ -46,6 +46,8 @@
 }*/ 
 
 header {
+    opacity: 0.9;
+    z-index: 5;
     .navbar {
         background-color: nth($colors, 1);
         border-bottom: 1px solid nth($colors, 4);

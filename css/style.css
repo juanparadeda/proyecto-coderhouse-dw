@@ -227,9 +227,9 @@ footer nav ul li:hover a {
   height: auto;
 }
 
-/* Estilos del contenido main de la sección de shows */
+/* Estilos del contenido main de la sección de shows y books */
+/* Grid container de las fotos de las secciones Shows y Books */
 .portfolio-container {
-  /* Este es el grid container de las fotos de las secciones Shows y Books */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(auto, auto);
@@ -245,26 +245,26 @@ footer nav ul li:hover a {
   cursor: pointer;
 }
 
+/*Selector de 1ra foto */
 .portfolio-item:nth-child(1) {
-  /*Selector de 1ra foto */
   grid-column: 1/3;
   grid-row: 1/3;
 }
 
+/*Selector de 4ta foto */
 .portfolio-item:nth-child(4) {
-  /*Selector de 4ta foto */
   grid-column: 2/4;
   grid-row: 3/5;
 }
 
+/*Selector de 7ma foto */
 .portfolio-item:nth-child(7) {
-  /*Selector de 7ma foto */
   grid-column: 1/4;
   grid-row: 5/8;
 }
 
+/* Ajuste de grid para mostrar una foto por row en pantallas angostas */
 @media only screen and (max-width: 1080px) {
-  /* Ajuste de grid */
   .portfolio-container {
     display: grid;
     grid-template-columns: 1fr;

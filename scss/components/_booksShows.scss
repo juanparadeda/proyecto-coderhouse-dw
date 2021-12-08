@@ -1,6 +1,7 @@
-/* Estilos del contenido main de la sección de shows */
+/* Estilos del contenido main de la sección de shows y books */
 
-.portfolio-container { /* Este es el grid container de las fotos de las secciones Shows y Books */
+/* Grid container de las fotos de las secciones Shows y Books */
+.portfolio-container { 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(auto, auto);
@@ -19,22 +20,24 @@
     }
 }
 
-
-.portfolio-item:nth-child(1) { /*Selector de 1ra foto */
+/*Selector de 1ra foto */
+.portfolio-item:nth-child(1) { 
     grid-column: 1 / 3;
     grid-row: 1 / 3;
 }
-
-.portfolio-item:nth-child(4) { /*Selector de 4ta foto */
+/*Selector de 4ta foto */
+.portfolio-item:nth-child(4) { 
     grid-column: 2 / 4;
     grid-row: 3 / 5;
 }
-.portfolio-item:nth-child(7) { /*Selector de 7ma foto */
+/*Selector de 7ma foto */
+.portfolio-item:nth-child(7) { 
     grid-column: 1 / 4;
     grid-row: 5 / 8;
 }
 
-@media only screen and (max-width: 1080px){ /* Ajuste de grid */
+/* Ajuste de grid para mostrar una foto por row en pantallas angostas */
+@media only screen and (max-width: 1080px){ 
 
     .portfolio-container {
         display: grid;

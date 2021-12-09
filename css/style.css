@@ -145,6 +145,14 @@ header .navbar div div .navbar-nav .custom-active {
     -ms-transform: rotate(0deg);
   }
 }
+@media only screen and (max-width: 800px) {
+  header .navbar div a img {
+    width: 4em;
+  }
+  header .navbar div button img {
+    width: 1.5em;
+  }
+}
 /* Estilos de footer */
 footer {
   border-top: 1px solid #0AFC26;

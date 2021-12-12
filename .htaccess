@@ -2,4 +2,9 @@
 # HTID:18905589: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
 php_value display_errors 1
 # DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:18905589:
+# Pagina 404 Custom
 ErrorDocument 404 /notfound.html
+# Cache-Control de 52 semanas
+<FilesMatch "\.(png|webp)$">
+Header set Cache-Control "max-age=3144,600, public"
+</FilesMatch>

@@ -37,7 +37,7 @@
     .rrss{ 
         margin: 2.5em;
         text-align: left;
-        .link-form { 
+        a { 
             margin: 1em;
             display: block;
             width: auto;
@@ -49,7 +49,7 @@
                     @include color-hover(nth($colors, 3));
                 }
             }
-            .text-form {
+            p {
                 margin-left: .5em;
                 font-size: 1.5em;
                 display: inline;

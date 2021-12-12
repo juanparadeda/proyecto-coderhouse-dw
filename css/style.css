@@ -24,7 +24,7 @@ h2, h1 {
   font-weight: normal;
 }
 
-.notfound:hover, .portfolio-container .portfolio-item .portfolio-photo, .section-container, .carousel-custom, header .navbar div div .navbar-nav .nav-item:hover {
+.notfound:hover, .portfolio-container .portfolio-item img, .section-container, .carousel-custom, header .navbar div div .navbar-nav .nav-item:hover {
   box-shadow: 0px 0px 3.75em 0.6em rgba(10, 252, 38, 0.2);
 }
 
@@ -243,17 +243,17 @@ footer nav ul li:hover a {
 .section-container .section-item-image {
   padding: 1.25em;
 }
-.section-container .section-item-image .text-photo {
+.section-container .section-item-image .index-photo {
   width: 31.25em;
+  height: auto;
+}
+.section-container .section-item-image .workshop-photo {
+  width: 35em;
   height: auto;
 }
 .section-container .section-item-text {
   padding: 1.25em;
   width: 47em;
-}
-.section-container .workshop-photo {
-  width: 35em;
-  height: auto;
 }
 
 /* Estilos del contenido main de la sección de shows y books */
@@ -266,7 +266,7 @@ footer nav ul li:hover a {
   grid-gap: 2.5em;
   margin: 3em auto;
 }
-.portfolio-container .portfolio-item .portfolio-photo {
+.portfolio-container .portfolio-item img {
   width: 100%;
   height: 100%;
 }
@@ -335,20 +335,20 @@ footer nav ul li:hover a {
   margin: 2.5em;
   text-align: left;
 }
-.form-flex .rrss .link-form {
+.form-flex .rrss a {
   margin: 1em;
   display: block;
   width: auto;
   color: #09E3DC;
   transition: all 0.5s;
 }
-.form-flex .rrss .link-form:hover {
+.form-flex .rrss a:hover {
   color: #5af8f3;
 }
-.form-flex .rrss .link-form:hover .text-form {
+.form-flex .rrss a:hover .text-form {
   color: #5af8f3;
 }
-.form-flex .rrss .link-form .text-form {
+.form-flex .rrss a p {
   margin-left: 0.5em;
   font-size: 1.5em;
   display: inline;

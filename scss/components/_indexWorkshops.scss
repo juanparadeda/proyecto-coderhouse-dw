@@ -36,19 +36,18 @@
     @extend %box-shadow;   
     .section-item-image {
         padding: 1.25em;
-        .text-photo { 
+        .index-photo { 
             width: 31.25em;
+            height: auto;
+        }
+        .workshop-photo {
+            width: 35em;
             height: auto;
         }
     }
     .section-item-text {
         padding: 1.25em;
         width: 47em;
-    }
-    .workshop-photo {
-        width: 35em;
-        height: auto;
-    }
-    
+    } 
 }
 

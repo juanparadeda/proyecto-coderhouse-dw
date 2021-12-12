@@ -32,52 +32,6 @@ h2, h1 {
   background: linear-gradient(320deg, #042215 30%, black 100%);
 }
 
-/* header {
-    position: fixed;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    top: 0;
-    background-color: nth($colors, 1);
-    z-index: 1;
-    border-bottom: 1px solid nth($colors, 4);
-    opacity: 0.87;
-    .logo {
-        width: 7.5em;
-        margin: 0.5em 0 0.5em 1em;
-    }
-    nav {
-        ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 5em 0 0;
-            padding: 0px;
-            opacity: 0.87;
-            li {
-                justify-content: flex-end;
-                padding:  0.4em 0;
-                background-color: nth($colors, 5);
-                border-radius: 1.25em;
-                margin: 0.4em;
-                border: 1px solid nth($colors, 2);  
-                transition: all 0.5s;
-                a {
-                    padding: 1em 0.6em;
-                }
-                &:hover {
-                    @extend %box-shadow;
-                    @include prefixes(scale(1.05));
-                    a {
-                        @include color-hover(nth($colors, 2));
-                    }
-                } 
-            }
-        }
-    }
-}*/
 header {
   opacity: 0.9;
   z-index: 5;
@@ -126,6 +80,7 @@ header .navbar div div .navbar-nav .nav-item .nav-link {
   color: #16FAB2;
 }
 header .navbar div div .navbar-nav .custom-active {
+  /* Esta clase cambia sutilmente el color del background del link en el que el usuario está navegando */
   background-color: #073923;
 }
 
@@ -276,20 +231,30 @@ footer nav ul li:hover a {
 
 /*Selector de 1ra foto */
 .portfolio-item:nth-child(1) {
+  grid-column: 1/4;
+  grid-row: 1/4;
+}
+
+.portfolio-item:nth-child(2) {
   grid-column: 1/3;
-  grid-row: 1/3;
+  grid-row: 4/6;
 }
 
 /*Selector de 4ta foto */
-.portfolio-item:nth-child(4) {
+.portfolio-item:nth-child(5) {
   grid-column: 2/4;
-  grid-row: 3/5;
+  grid-row: 6/8;
 }
 
 /*Selector de 7ma foto */
-.portfolio-item:nth-child(7) {
+.portfolio-item:nth-child(8) {
   grid-column: 1/4;
-  grid-row: 5/8;
+  grid-row: 8/11;
+}
+
+.portfolio-item:nth-child(9) {
+  grid-column: 1/3;
+  grid-row: 11/13;
 }
 
 /* Ajuste de grid para mostrar una foto por row en pantallas angostas */
@@ -318,9 +283,6 @@ footer nav ul li:hover a {
 .form-flex .form-container {
   width: 35em;
 }
-.form-flex .form-container div {
-  /* .field-text es el label de texto que está al lado de cada campo del formulario */
-}
 .form-flex .form-container div .field-text {
   color: #16FAB2;
 }
@@ -343,9 +305,6 @@ footer nav ul li:hover a {
   transition: all 0.5s;
 }
 .form-flex .rrss a:hover {
-  color: #5af8f3;
-}
-.form-flex .rrss a:hover .text-form {
   color: #5af8f3;
 }
 .form-flex .rrss a p {

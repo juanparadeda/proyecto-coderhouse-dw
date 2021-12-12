@@ -8,14 +8,13 @@
     flex-wrap: wrap;
     align-items: center;
     /* La clase .form-container es la contenedora del formulario propiamente dicho*/
-    .form-container{
+    .form-container {
         width: 35em;
-        div{
-            /* .field-text es el label de texto que está al lado de cada campo del formulario */
+        div {
             .field-text {
                 color: nth($colors, 2);
             }
-            div{
+            div {
                 .small-field{
                     @extend %form-format;
                 }
@@ -45,9 +44,6 @@
             transition: all 0.5s;
             &:hover {
                 @include color-hover(nth($colors, 3));
-                .text-form {
-                    @include color-hover(nth($colors, 3));
-                }
             }
             p {
                 margin-left: .5em;

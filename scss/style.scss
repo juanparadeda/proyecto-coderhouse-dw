@@ -4,9 +4,11 @@
 @import 'base/variables';
 @import 'base/mixins';
 @import 'base/extends';
+@import 'base/mediaQueries';
+@import 'components/index';
 @import 'components/header';
 @import 'components/footer';
-@import 'components/indexWorkshops';
+@import 'components/workshops';
 @import 'components/booksShows';
 @import 'components/contacto';
 @import 'components/notfound';

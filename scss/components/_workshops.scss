@@ -1,0 +1,47 @@
+/* Estilos de contenido main de la sección Workshops*/
+
+/*Tamaño del carousel de Bootstrap en workshops.html*/
+
+
+
+/*Secciones de contenido de imagen y texto*/
+.section-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 50px auto;
+    @extend %gradient;
+    @extend %box-shadow;   
+    .workshops-section-item-text {
+        padding: 1.25em;
+        width: 50em;
+    }
+    .workshops-carousel-custom {
+        /*width: 70%;*/
+        width: 50em;
+        height: auto;
+        margin: 2em auto;
+        .carousel-indicators {
+            bottom: -10%;
+            button {
+                background-color: nth($colors, 3);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .section-container {
+        .workshops-carousel-custom {
+            /*width: 70%;*/
+            width: 34em;
+            height: auto;
+            margin: 2em auto;
+            .carousel-indicators {
+                bottom: -20%;
+            }
+        }
+    }
+}

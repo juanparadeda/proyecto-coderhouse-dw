@@ -24,12 +24,58 @@ h2, h1 {
   font-weight: normal;
 }
 
-.notfound:hover, .portfolio-container .portfolio-item img, .section-container, .carousel-custom, header .navbar div div .navbar-nav .nav-item:hover {
+.notfound:hover, .portfolio-container .portfolio-item img, header .navbar div div .navbar-nav .nav-item:hover, .section-container, .index-carousel-custom {
   box-shadow: 0px 0px 3.75em 0.6em rgba(10, 252, 38, 0.2);
 }
 
 .section-container {
   background: linear-gradient(320deg, #042215 30%, black 100%);
+}
+
+/* Ajustes para ajustar tamaños de todas las fuentes y de los márgenes de los títulos*/
+/* Estilos del contenido main de la sección index.html */
+/* Dimensiones y estilos del carousel de BS */
+.index-carousel-custom {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Customización de los íconos next y previous del carousel de BS */
+.carousel-control-next {
+  left: 100%;
+  right: unset;
+}
+.carousel-control-next .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2316FAB2'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-prev {
+  right: 100%;
+  left: unset;
+}
+.carousel-control-prev .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2316FAB2'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+.section-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 50px auto;
+}
+.section-container .index-section-item-image {
+  padding: 1.25em;
+}
+.section-container .index-section-item-image .index-photo {
+  width: 31.25em;
+  height: auto;
+}
+.section-container .index-section-item-text {
+  padding: 1.25em;
+  width: 47em;
 }
 
 header {
@@ -170,31 +216,8 @@ footer nav ul li:hover a {
     -ms-transform: rotate(20deg);
   }
 }
-/* Estilos de contenido main del inicio y la sección Workshops*/
-/*Tamaño del carousel de Bootstrap*/
-.carousel-custom {
-  width: 70%;
-  height: auto;
-  margin: 0 auto;
-}
-
-/* Customización de los íconos next y previous del carousel de BS */
-.carousel-control-next {
-  left: 100%;
-  right: unset;
-}
-.carousel-control-next .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2316FAB2'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-}
-
-.carousel-control-prev {
-  right: 100%;
-  left: unset;
-}
-.carousel-control-prev .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2316FAB2'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
-}
-
+/* Estilos de contenido main de la sección Workshops*/
+/*Tamaño del carousel de Bootstrap en workshops.html*/
 /*Secciones de contenido de imagen y texto*/
 .section-container {
   display: flex;
@@ -204,22 +227,34 @@ footer nav ul li:hover a {
   width: 90%;
   margin: 50px auto;
 }
-.section-container .section-item-image {
+.section-container .workshops-section-item-text {
   padding: 1.25em;
+  width: 50em;
 }
-.section-container .section-item-image .index-photo {
-  width: 31.25em;
+.section-container .workshops-carousel-custom {
+  /*width: 70%;*/
+  width: 50em;
   height: auto;
+  margin: 2em auto;
 }
-.section-container .section-item-image .workshop-photo {
-  width: 35em;
-  height: auto;
+.section-container .workshops-carousel-custom .carousel-indicators {
+  bottom: -10%;
 }
-.section-container .section-item-text {
-  padding: 1.25em;
-  width: 47em;
+.section-container .workshops-carousel-custom .carousel-indicators button {
+  background-color: #09E3DC;
 }
 
+@media only screen and (max-width: 650px) {
+  .section-container .workshops-carousel-custom {
+    /*width: 70%;*/
+    width: 34em;
+    height: auto;
+    margin: 2em auto;
+  }
+  .section-container .workshops-carousel-custom .carousel-indicators {
+    bottom: -20%;
+  }
+}
 /* Estilos del contenido main de la sección de shows y books */
 /* Grid container de las fotos de las secciones Shows y Books */
 .portfolio-container {
@@ -266,7 +301,7 @@ footer nav ul li:hover a {
   grid-row: 11/13;
 }
 
-/* Ajuste de grid para mostrar una foto por row en pantallas angostas */
+/* Ajuste de grid para mostrar una foto por row en pantallas angostas para los grids de books.html y shows.html*/
 @media only screen and (max-width: 1080px) {
   .portfolio-container {
     display: grid;

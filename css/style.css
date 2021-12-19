@@ -65,7 +65,7 @@ header .navbar div div .navbar-nav .nav-item {
   border: 1px solid #16FAB2;
   transition: all 0.5s;
   display: inline-block;
-  width: 7.5em;
+  width: 8.5em;
 }
 header .navbar div div .navbar-nav .nav-item:hover {
   color: #7afcd3;
@@ -76,6 +76,7 @@ header .navbar div div .navbar-nav .nav-item:hover {
   -ms-transform: scale(1.05);
 }
 header .navbar div div .navbar-nav .nav-item .nav-link {
+  font-size: 1.5em;
   text-align: center;
   color: #16FAB2;
 }
@@ -100,12 +101,20 @@ header .navbar div div .navbar-nav .custom-active {
     -ms-transform: rotate(0deg);
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 960px) {
   header .navbar div a img {
     width: 4em;
   }
   header .navbar div button img {
     width: 1.5em;
+  }
+  header .navbar div div .navbar-nav .nav-item {
+    width: 9.2em;
+  }
+}
+@media only screen and (min-width: 961px) {
+  header .navbar div div .navbar-nav .nav-item .nav-link {
+    font-size: 1.2em;
   }
 }
 /* Estilos de footer */
@@ -285,13 +294,15 @@ footer nav ul li:hover a {
 }
 .form-flex .form-container div .field-text {
   color: #16FAB2;
+  font-size: 1.6em;
 }
 .form-flex .form-container div div .big-field {
   height: 15em;
 }
 .form-flex .form-container .custom-button {
-  height: 2.7em;
+  height: 2.3em;
   float: right;
+  font-size: 1.6em;
 }
 .form-flex .rrss {
   margin: 2.5em;
@@ -369,14 +380,14 @@ h2 {
 
 p {
   /*Párrafos de texto*/
-  font-size: 1.4em;
+  font-size: 1.6em;
   color: #16FAB2;
-  line-height: 2em;
+  line-height: 1.6em;
 }
 
-@media only screen and (min-width: 801px) and (max-width: 1080px) {
+@media only screen and (min-width: 961px) and (max-width: 1080px) {
   body {
-    font-size: 12px;
+    font-size: 14px;
     /* Así achico todos los valores que tengo en em */
   }
 
@@ -384,7 +395,7 @@ p {
     margin-top: 3em;
   }
 }
-@media only screen and (min-width: 501px) and (max-width: 800px) {
+@media only screen and (min-width: 501px) and (max-width: 960px) {
   body {
     font-size: 10px;
     /* Así achico todos los valores que tengo en em */

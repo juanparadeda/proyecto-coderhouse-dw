@@ -8,14 +8,12 @@
     width: 90%;
     grid-gap: 2.5em;
     margin: 3em auto;
-    .portfolio-item{
-        img{
+    .portfolio-item {
+        cursor: url('../multimedia/info2.png'), help;
+        img {
             width: 100%;
             height: 100%;
             @extend %box-shadow;
-        }
-        &:hover {
-            cursor: pointer;
         }
     }
 }

@@ -5,10 +5,7 @@
 
 
 /*Secciones de contenido de imagen y texto*/
-span {
-    position: relative;
-    top: -11em;
-}
+
 .anchor-links {
     margin-top: 5em;
     text-align: center;
@@ -89,9 +86,3 @@ span {
     }
 }
 
-@media only screen and (max-width: 500px){
-    span {
-        position: relative;
-        top: -15em;
-    }
-}

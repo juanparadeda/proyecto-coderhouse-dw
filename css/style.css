@@ -219,11 +219,6 @@ footer nav ul li:hover a {
 /* Estilos de contenido main de la sección Workshops*/
 /*Tamaño del carousel de Bootstrap en workshops.html*/
 /*Secciones de contenido de imagen y texto*/
-span {
-  position: relative;
-  top: -11em;
-}
-
 .anchor-links {
   margin-top: 5em;
   text-align: center;
@@ -299,12 +294,6 @@ span {
 @media only screen and (min-width: 1080px) {
   .back-to-top:hover {
     opacity: 0.8;
-  }
-}
-@media only screen and (max-width: 500px) {
-  span {
-    position: relative;
-    top: -15em;
   }
 }
 /* Estilos del contenido main de la sección de shows y books */
@@ -435,6 +424,12 @@ main {
   margin: 0 2em;
 }
 
+/* Posición de anchors para links en páginas */
+.anchor {
+  position: relative;
+  top: -11em;
+}
+
 /*En el body defino el color del fondo y la fuente, porque por el momento es lo que voy a usar en todo el website*/
 body {
   margin: 0px;
@@ -518,6 +513,11 @@ p {
 
   h1 {
     margin-top: 3em;
+  }
+
+  .anchor {
+    position: relative;
+    top: -15em;
   }
 }
 

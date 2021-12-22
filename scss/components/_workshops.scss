@@ -5,6 +5,41 @@
 
 
 /*Secciones de contenido de imagen y texto*/
+span {
+    position: relative;
+    top: -11em;
+}
+.anchor-links {
+    margin-top: 5em;
+    text-align: center;
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        li {
+            display: inline-block;
+            a {
+                display: inline-block;
+                vertical-align: middle;
+                background-color: nth($colors, 5);
+                border-radius: 1.25em;
+                font-size: 1.6em;
+                margin: 0.4em;
+                border: 1px solid nth($colors, 2);
+                transition: all 0.5s;
+                padding: 0.6em 1em;
+                &:hover {
+                    @include color-hover(nth($colors, 2));
+                    @extend %box-shadow;
+                    @include prefixes(scale(1.05));
+                }      
+            }
+        }
+    }
+}
+.workshop-title {
+    margin-top: 2em;
+}
 .section-container {
     display: flex;
     align-items: center;
@@ -43,5 +78,20 @@
                 bottom: -20%;
             }
         }
+    }
+}
+
+@media only screen and  (min-width: 1080px){
+    .back-to-top {
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px){
+    span {
+        position: relative;
+        top: -15em;
     }
 }

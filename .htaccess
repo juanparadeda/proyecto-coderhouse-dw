@@ -6,5 +6,5 @@ php_value display_errors 1
 ErrorDocument 404 /notfound.html
 # Cache-Control de 52 semanas
 <FilesMatch "\.(png|webp)$">
-Header set Cache-Control "max-age=3144,600, public"
+Header set Cache-Control "max-age=31536000, public"
 </FilesMatch>

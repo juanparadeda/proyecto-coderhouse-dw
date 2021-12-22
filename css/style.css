@@ -24,7 +24,7 @@ h2, h1 {
   font-weight: normal;
 }
 
-.notfound:hover, .portfolio-container .portfolio-item img, header .navbar div div .navbar-nav .nav-item:hover, .section-container, .index-carousel-custom {
+.notfound:hover, .portfolio-container .portfolio-item img, .anchor-links ul li a:hover, header .navbar div div .navbar-nav .nav-item:hover, .section-container, .index-carousel-custom {
   box-shadow: 0px 0px 3.75em 0.6em rgba(10, 252, 38, 0.2);
 }
 
@@ -219,6 +219,47 @@ footer nav ul li:hover a {
 /* Estilos de contenido main de la sección Workshops*/
 /*Tamaño del carousel de Bootstrap en workshops.html*/
 /*Secciones de contenido de imagen y texto*/
+span {
+  position: relative;
+  top: -11em;
+}
+
+.anchor-links {
+  margin-top: 5em;
+  text-align: center;
+}
+.anchor-links ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.anchor-links ul li {
+  display: inline-block;
+}
+.anchor-links ul li a {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #042215;
+  border-radius: 1.25em;
+  font-size: 1.6em;
+  margin: 0.4em;
+  border: 1px solid #16FAB2;
+  transition: all 0.5s;
+  padding: 0.6em 1em;
+}
+.anchor-links ul li a:hover {
+  color: #7afcd3;
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+}
+
+.workshop-title {
+  margin-top: 2em;
+}
+
 .section-container {
   display: flex;
   align-items: center;
@@ -253,6 +294,17 @@ footer nav ul li:hover a {
   }
   .section-container .workshops-carousel-custom .carousel-indicators {
     bottom: -20%;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .back-to-top:hover {
+    opacity: 0.8;
+  }
+}
+@media only screen and (max-width: 500px) {
+  span {
+    position: relative;
+    top: -15em;
   }
 }
 /* Estilos del contenido main de la sección de shows y books */
@@ -418,6 +470,24 @@ p {
   font-size: 1.6em;
   color: #16FAB2;
   line-height: 1.6em;
+}
+
+.back-to-top {
+  /* Botón Back to top, aparece en shows.html, books.html y workshops. html */
+  position: fixed;
+  right: 0.5em;
+  bottom: 4em;
+  border: 1px solid #09E3DC;
+  border-radius: 50%;
+  opacity: 0.4;
+  transition: all 0.2s;
+}
+.back-to-top img {
+  width: 2.5em;
+  height: auto;
+}
+.back-to-top:focus {
+  opacity: 0.8;
 }
 
 @media only screen and (min-width: 961px) and (max-width: 1080px) {

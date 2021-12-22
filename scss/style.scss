@@ -52,6 +52,23 @@ p { /*Párrafos de texto*/
     line-height: 1.6em;
 }
 
+.back-to-top { /* Botón Back to top, aparece en shows.html, books.html y workshops. html */
+    position: fixed;
+    right: 0.5em;
+    bottom: 4em;
+    border: 1px solid nth($colors, 3);
+    border-radius: 50%;
+    opacity: 0.4;
+    transition: all 0.2s;
+    img{
+        width: 2.5em;
+        height: auto;
+    }
+    &:focus {
+        opacity: 0.8;
+    }
+}
+
 @media only screen and (min-width: 961px) and (max-width: 1080px){
     body {
         font-size: 14px; /* Así achico todos los valores que tengo en em */

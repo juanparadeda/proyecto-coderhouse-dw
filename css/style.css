@@ -394,6 +394,9 @@ footer nav ul li:hover a {
 .form-flex .rrss a:hover {
   color: #5af8f3;
 }
+.form-flex .rrss a:hover p {
+  color: #7afcd3;
+}
 .form-flex .rrss a p {
   margin-left: 0.5em;
   font-size: 1.5em;

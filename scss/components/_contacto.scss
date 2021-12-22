@@ -46,6 +46,9 @@
             transition: all 0.5s;
             &:hover {
                 @include color-hover(nth($colors, 3));
+                p {
+                    @include color-hover(nth($colors, 2));
+                }
             }
             p {
                 margin-left: .5em;

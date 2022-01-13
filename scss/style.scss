@@ -73,7 +73,9 @@ p { /*Párrafos de texto*/
         opacity: 0.8;
     }
 }
-
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
 @media only screen and (min-width: 961px) and (max-width: 1080px){
     body {
         font-size: 14px; /* Así achico todos los valores que tengo en em */

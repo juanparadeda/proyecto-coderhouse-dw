@@ -103,7 +103,7 @@ header .navbar div button img:hover {
 header .navbar div div .navbar-nav {
   margin-right: 5em;
   align-items: flex-end;
-  /* Este !important lo tuve que agregar, porque en una de las media queries de Bootstrap, me agregaba un margin bottom molesto que me descentraba los botones del header */
+  /* Este !important lo tuve que agregar, porque en una de las media queries de Bootstrap, me agregaba un margin bottom molesto que me descentraba los botones del header*/
   margin-bottom: 0 !important;
 }
 header .navbar div div .navbar-nav .nav-item {
@@ -488,6 +488,10 @@ p {
 }
 .back-to-top:focus {
   opacity: 0.8;
+}
+
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
 }
 
 @media only screen and (min-width: 961px) and (max-width: 1080px) {

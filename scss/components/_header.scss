@@ -22,13 +22,12 @@ header {
                         animation: hamburger-rotation 1s;
                     }
                 }
-
             }
             div {
                 .navbar-nav {
                     margin-right: 5em;
                     align-items: flex-end;
-                    /* Este !important lo tuve que agregar, porque en una de las media queries de Bootstrap, me agregaba un margin bottom molesto que me descentraba los botones del header */
+                    /* Este !important lo tuve que agregar, porque en una de las media queries de Bootstrap, me agregaba un margin bottom molesto que me descentraba los botones del header*/
                     margin-bottom: 0!important;
                     .nav-item {
                         background-color: nth($colors, 5);
